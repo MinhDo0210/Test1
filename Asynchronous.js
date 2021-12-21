@@ -45,7 +45,25 @@ asyncFunction(printEnd)
     // then(): Dùng để xử lý sau khi Promise được thực hiện thành công (khi resolve được gọi).
     // catch(): Dùng để xử lý sau khi Promise có bất kỳ lỗi nào đó (khi reject được gọi).
 
+//1. Pendding
+//2. Fulfilled
+//3. Rejected
 
+var promise = new Promise(
+    //Executor
+    function(resolve, reject){
+        //Logic
+        //Thành công: resolve
+        //Thất bại: reject
+    }
+)
+
+promise
+    .then()
+    .catch()
+    .finally()
+
+    
 //Async/Await
 //Async sẽ thông báo rằng function sẽ xử lý bất đồng bộ
 //await sẽ được dùng để báo chúng ta muốn đợi kết quả của thao tác bất đồng bộ trong một function có đánh dấu async
