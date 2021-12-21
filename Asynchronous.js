@@ -16,3 +16,36 @@ function test(){
 }
 
 test();  //2 3 1
+
+//callback
+//Là cách thực thi bất đồng bộ
+//đc truyền qua đối số của 1 function khác
+//và đc gọi lại trong hàm nhận đối số
+//Tránh dùng vì callback Hell
+function asyncFunction(callback) {
+    console.log("Start");
+    setTimeout(() => {
+        callback();
+    }, 1000);
+    console.log("Waiting");
+}
+
+let printEnd = function() {
+    console.log("End");
+}
+
+asyncFunction(printEnd)
+
+//Promise
+//Promise là cách xử lý bất đồng bộ
+// Promise sẽ nhận vào một hàm callback gồm 2 tham số:
+    // resolve: một function sẽ được gọi nếu đoạn code bất đồng bộ trong Promise chạy thành công.
+    // reject: một function sẽ được gọi nếu đoạn code bất đồng bộ trong Promise có lỗi xảy ra.
+// Promise cũng cung cấp cho chúng ta 2 phương thức để xử lý sau khi được thực hiện:
+    // then(): Dùng để xử lý sau khi Promise được thực hiện thành công (khi resolve được gọi).
+    // catch(): Dùng để xử lý sau khi Promise có bất kỳ lỗi nào đó (khi reject được gọi).
+
+
+//Async/Await
+//Async sẽ thông báo rằng function sẽ xử lý bất đồng bộ
+//await sẽ được dùng để báo chúng ta muốn đợi kết quả của thao tác bất đồng bộ trong một function có đánh dấu async
