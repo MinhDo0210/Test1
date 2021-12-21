@@ -9,6 +9,8 @@
     var greeting;
     console.log(greeting);
     greeting = "say hello";
+
+
 // --Let: Bất cứ khi nào một biến được khai báo bằng từ khóa let, các biến đó là:
 // •	Phạm vi khối (Block scope)
 // •	Có thể gán lại nhưng không thể khai báo lại
@@ -21,6 +23,8 @@
             console.log(hello);
         }
     console.log(hello);
+
+    
 // --Const: Bất cứ khi nào một biến được khai báo bằng từ khóa const, các biến đó là:
 // •	Phạm vi khối
 // •	Không thể gán lại cũng không thể khai báo lại
