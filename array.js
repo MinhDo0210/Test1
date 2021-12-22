@@ -21,7 +21,7 @@ let result3 = array.findIndex(array => array > 8);
 console.log(result3);
 
 
-//reduce(): dùng để tính toán từ các phần tử của mảng (theo thứ tự từ trái sang phải).
+//reduce(): dùng để tính toán từ các phần tử của mảng.
 //Accumulator: biến lưu trữ
 //Current Value: Giá trị hiện tại
 //initial value: giá trị khởi tạo

@@ -64,6 +64,13 @@ promise
     .finally()
 
     
-//Async/Await
-//Async sẽ thông báo rằng function sẽ xử lý bất đồng bộ
-//await sẽ được dùng để báo chúng ta muốn đợi kết quả của thao tác bất đồng bộ trong một function có đánh dấu async
+// Async/Await
+
+// Async sẽ thông báo rằng function sẽ xử lý bất đồng bộ
+// Tự động biến đổi hàm thông thường với thành mội Promises
+// Khi gọi tới hàm async nó sẽ xử lý mọi thứ và được trả về kết quả trong hàm của nó
+
+// await sẽ được dùng để báo chúng ta muốn đợi kết quả của thao tác bất đồng bộ trong một function có đánh dấu async
+// Khi dắt trước Promises nó sẽ đợi cho đến khi Promises kết thúc và trả về kết quả
+// Await chỉ làm việc với Promises, không hoạt động với callback
+// Chỉ dùng trong function async
